@@ -14,7 +14,10 @@ def get_current() -> str:
 
 
 def get_next(current) -> str:
-    new_str = dt.date.today().strftime("%Y.%m.%d")
+    today = dt.date.today()
+    # can't use strftime because of default zero-padding,
+    # which is not supported by python version specifiers
+    new_str = f"{today.year}.{today.month}.{today.day}"
 
     if not current.startswith(new_str):
         return new_str

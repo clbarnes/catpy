@@ -24,7 +24,7 @@ Python client for the `CATMAID <https://catmaid.org>`_ API, plus some helpful to
 Versioning
 ----------
 
-``catpy`` stopped using semantic versioning after 0.3.0, and now uses [calendar versioning](https://calver.org), using the scheme ``YYYY.0M.0D``, with an optional incrementing field in rare cases where more than one release is necessary in a day.
+``catpy`` stopped using semantic versioning after 0.3.0, and now uses [calendar versioning](https://calver.org), using the scheme ``YYYY.MM.DD`` (python does not support ``0M`` and ``0D`` specifiers), with an optional incrementing field in rare cases where more than one release is necessary in a day.
 The `next_version.py` script produces the next version.
 The first version under the new scheme is ``2020.08.19``.
 
