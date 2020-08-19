@@ -36,9 +36,10 @@ def main():
     parser = ArgumentParser()
     parser.add_argument("-v", action="store_true", help="prefix with 'v'")
     parser.add_argument(
-        "-c", "--current",
+        "-c",
+        "--current",
         action="store_true",
-        help="return the current, rather than the next, version"
+        help="return the current, rather than the next, version",
     )
     parsed = parser.parse_args()
     v = "v" if parsed.v else ""
