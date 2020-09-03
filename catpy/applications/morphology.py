@@ -66,7 +66,7 @@ def in_roi(roi_xyz, coords_xyz):
 def treenode_df(response: List[List[Any]]) -> pd.DataFrame:
     return lol_to_df(
         response,
-        ["id", "parent", "user", "x", "y", "z", "radius", "confidence"],
+        ["treenode_id", "parent_id", "user_id", "x", "y", "z", "radius", "confidence"],
         [
             np.uint64,
             pd.UInt64Dtype(),
